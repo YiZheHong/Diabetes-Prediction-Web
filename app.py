@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request
-from sklearn.neural_network import MLPClassifier
 import numpy as np
 from joblib import dump, load
 # from ModelPrep import nn_clf
