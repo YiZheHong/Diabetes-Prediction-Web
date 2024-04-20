@@ -22,7 +22,9 @@ def predict():
         user_data = [[age, hypertension, bmi, hba1c, blood_glucose]]
 
         # Make a prediction
-        prediction = nn_clf.predict(user_data)[0]
+        # prediction = nn_clf.predict(user_data)[0]
+        prediction = 0
+
         if prediction == 0:
             result = "You do not have diabetes."
         else:
@@ -40,9 +42,7 @@ def about():
 def models():
     return render_template('models.html')
 
-@app.route('/contact', methods=['GET', 'POST'])
-def contact():
-    return render_template('contact.html')
+
 
 @app.route('/cite', methods=['GET', 'POST'])
 def cite():

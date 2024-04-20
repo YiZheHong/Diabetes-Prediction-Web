@@ -13,18 +13,37 @@
         <img src="../static/images/arrow.png" width="15" height = "15">
         <button onclick="location.href='/predict'">AI Empowered Prediction</button>
         <img src="../static/images/arrow.png" width="15" height = "15">
-        <button onclick="location.href='/contact'">Contact</button>
-        <img src="../static/images/arrow.png" width="15" height = "15">
-        <button onclick="location.href='/cite'">Contact</button>
+        <button onclick="location.href='/cite'">Reference</button>
     </div>
     <div class="main">
-        <h1>Diabetes Prediction</h1>
+        <h1>Source Citations</h1>
 
+        <section class="sec">
+            <h2>Source of Image</h2>
+            <ul class="info-list">
+                <li>Image 1: Photo by [Photographer Name] on [Website Name]</li>
+                <li>Image 2: Image by [Creator Name] from [Website Name]</li>
+                <li>Image 3: Illustration by [Artist Name] via [Website Name]</li>
+            </ul>
+        </section>
 
+        <section class="sec">
+            <h2>Source of Diabetes Information</h2>
+            <ul class="info-list">
+                <li>Article Title: "Understanding Diabetes" from [Journal Name] by [Author Name]</li>
+                <li>Research Paper: "The Impact of Diet on Diabetes" published in [Journal Name] by [Research Group]</li>
+                <li>Website: Diabetes Facts and Figures from [Organization Name] website</li>
+            </ul>
+        </section>
+
+        <div class="navigation">
+            <button onclick="location.href='/predict'">Previous Page</button>
+            <button onclick="location.href='/'">Next Page</button>
+        </div>
 
     </div>
+
     <div class="footer">
-        Logged in as: <b>{{ user_name }}</b> | Email: <b>{{ user_email }}</b>
     </div>
 </body>
 </html>
