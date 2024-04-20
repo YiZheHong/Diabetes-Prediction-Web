@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>About Diabetes</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
+    <div class="topbar">
+        <button onclick="location.href='/about'">What is Diabetes</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/models'">How AI</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/predict'">AI Empowered Prediction</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/contact'">Contact</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/cite'">Contact</button>
+    </div>
+    <div class="main">
+        <h1>What is Diabetes</h1>
+        <section class="sec">
+            <p>
+                Diabetes is a condition where your body has trouble managing sugar levels in your blood. Sugar, or glucose, comes from the food you eat and gives you energy. Normally, a hormone called insulin helps your body use this sugar.
+                But in diabetes, either your body doesn't make enough insulin, or it can't use it properly.
+            </p>
+            <h2>Early Signs</h2>
+            <p>
+                Early signs might include feeling very thirsty, needing to pee a lot, feeling tired even when you haven't done much, and maybe losing weight without trying.
+                Sometimes your vision might get blurry too.
+            </p>
+            <h2>Danger</h2>
+            <p>If diabetes isn't managed well, it can lead to serious problems like heart disease, kidney damage, eye problems, and even amputations in extreme cases.
+                But the good news is, if caught early and managed well, many of these problems can be prevented or delayed.
+            </p>
+            <h2>Benefits of Early Detection</h2>
+            <p>
+                Finding out you have diabetes early can actually save you money in the long run. That's because managing it early with things like diet, exercise, and sometimes medication can help prevent those serious problems down the road.
+                Plus, catching it early means you have a better chance of keeping it under control and living a healthy life without major complications. While diabetes can't be "cured" in most cases, early detection and management can make a big difference in your quality of life and help you avoid costly medical treatments later on.
+            </p>
 
+        </section>
+        <img src="../static/images/d.jpg" width="300">
+
+        <div class="navigation">
+            <button onclick="location.href='/'">Previous Page</button>
+            <button onclick="location.href='/models'">Next Page</button>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        Logged in as: <b>{{ user_name }}</b> | Email: <b>{{ user_email }}</b>
+    </div>
 </body>
 </html>

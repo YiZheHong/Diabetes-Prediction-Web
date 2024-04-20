@@ -3,8 +3,13 @@ from joblib import load
 nn_clf = load('Diabetes_MLP.joblib')
 app = Flask(__name__)
 
+
 @app.route('/', methods=['GET', 'POST'])
 def index():
+    return render_template('index.html')
+
+@app.route('/predict', methods=['GET', 'POST'])
+def predict():
     if request.method == 'POST':
         # Get user input data
         age = float(request.form['age'])
@@ -23,14 +28,25 @@ def index():
         else:
             result = "You have diabetes."
 
-        return render_template('index1.html', result=result)
+        return render_template('predict.html', result=result)
 
-    return render_template('index1.html')
+    return render_template('predict.html')
 
 
 @app.route('/about', methods=['GET', 'POST'])
 def about():
     return render_template('about.html')
+@app.route('/models', methods=['GET', 'POST'])
+def models():
+    return render_template('models.html')
+
+@app.route('/contact', methods=['GET', 'POST'])
+def contact():
+    return render_template('contact.html')
+
+@app.route('/cite', methods=['GET', 'POST'])
+def cite():
+    return render_template('cite.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

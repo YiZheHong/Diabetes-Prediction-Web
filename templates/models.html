@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Models</title>
+    <link rel="stylesheet" href="../static/css/styles.css">
+        <script src="../static/js/calculateBMI.js"></script>
+</head>
+<body>
+    <div class="topbar">
+        <button onclick="location.href='/about'">What is Diabetes</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/models'">How AI</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/predict'">AI Empowered Prediction</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/contact'">Contact</button>
+        <img src="../static/images/arrow.png" width="15" height = "15">
+        <button onclick="location.href='/cite'">Contact</button>
+    </div>
+    <div class="main">
+        <h1>Why Use AI to Predict Health Conditions?</h1>
+        <section class="sec">
+            <p>
+                Medical examinations can be complex and hard to understand for those who are not health professionals.
+                A physical exam involves various tests and checks that can be overwhelming, especially if you don't have medical knowledge. Using Artificial Intelligence (AI) can simplify these results, making them easier to understand by highlighting what's most important.
+                This way, anyone can comprehend their health status without needing a deep understanding of medical jargon.
+            </p>
+            <h2>Shortage of Medical Resources</h2>
+            <p>
+                The global demand for healthcare services often exceeds supply. For example, the World Health Organization (WHO) reports a projected shortfall of 18 million health workers by 2030, mostly in low- and middle-income countries.
+                AI can help mitigate this gap by providing initial screening and diagnostic assistance, allowing doctors and nurses to focus on more critical cases and reducing waiting times for patients.
+            </p>
+
+
+        </section>
+        <img src="../static/images/d.jpg" width="300">
+<h1>Information needed for AI</h1>
+        <section class="sec">
+            <ul class="info-list">
+                <li><strong>Age:</strong>
+                    Older age increases the risk of developing type 2 diabetes due to factors like the body's cells becoming less effective at managing sugar levels as they age.
+                </li>
+                <li><strong>Hypertension (High Blood Pressure):</strong>
+                    A strong correlation between high blood pressure and diabetes risk.
+                    Both conditions share common pathways that damage blood vessels, making a person with hypertension more likely to develop diabetes.
+                </li>
+
+                <li><strong>BMI (Body Mass Index):</strong>
+                    This is a measure of body fat based on height and weight.
+                    A higher BMI often correlates with a greater risk of diabetes, as excess body fat contributes to cellular resistance to insulin, which is crucial for regulating blood sugar.
+                </li>
+                <div>
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" name="weight" placeholder="Your weight in kg" required>
+                        <label for="height">Height (m):</label>
+                        <input type="number" id="height" name="height" step="0.01" placeholder="Your height in meters" required>
+                        <button onclick="calculateBMI()">Calculate BMI</button>
+                        <p id="bmiResult"></p>
+                </div>
+
+                <li><strong>HbA1c (Hemoglobin A1c):</strong>
+                    This term refers to a minor component of hemoglobin to which glucose is bound. HbA1c levels reflect average blood glucose concentrations over the previous three months.
+                    Higher values are indicative of poorer sugar control and a higher risk of diabetes.
+                </li>
+
+                <li><strong>Blood Glucose:</strong>
+                    This is the primary sugar found in your blood and the main source of energy for your body's cells.
+                    High blood glucose levels can indicate diabetes, which involves impaired insulin production and function.
+                </li>
+            </ul>
+        </section>
+        <div class="navigation">
+            <button onclick="location.href='/about'">Previous Page</button>
+            <button onclick="location.href='/predict'">Next Page</button>
+        </div>
+
+
+    </div>
+    <div class="footer">
+        Logged in as: <b>{{ user_name }}</b> | Email: <b>{{ user_email }}</b>
+    </div>
+</body>
+</html>
