@@ -4,9 +4,25 @@ This project aims to develop a robust machine learning model that can predict di
 I utilize machine learning model to predict diabetes and build a website for free access, aiming to enhance understanding of medical examinations, benefit from early detection of potential health issues, and cope with the global shortage of medical resources.
 
 ## Table of Contents
-
+- [User Guide](#userguide)
 - [Installation](#installation)
-- [Project_Explained](#project_explained)
+- [Project_Explained](#projectexplained)
+
+## userGuide 
+Step 1: Clink on the Web link: https://diabetes-omega.vercel.app/ (It will be expired after June 2024)
+
+Step 2: Click on the button "Explore Diabetes"
+![alt text](./static/images/welcome_page.png)
+
+Step 3: The topbar is a menu of this website; The footbar show some general contact of the author
+Step 4: Scrolling down the web and click on the button "Next Pages" or "Prev Pages"
+![alt text](./static/images/main_page.png)
+
+Step 5: Input the value of your weight and height; the web will calculate your BMI for you and provide advice based on it.
+![alt text](./static/images/predict_page.png)
+
+Step 6: Input the numbers that you can find in your Physical Exam Report and Blood Test, the AI model will predict whether you have diabetes. 
+
 
 ## Installation
 
@@ -40,12 +56,12 @@ source venv/bin/activate
 Install all the required packages using the following command:
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements_localUsage.txt
 ```
 
 This command will install all the necessary Python libraries including `pandas`, `sklearn`, and others which are required for the project.
 
-## Project_Explained
+## projectExplained
 
 ### Data Preprocessing
 
