@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from joblib import load
+# from joblib import load
 # nn_clf = load('Diabetes_MLP.joblib')
 app = Flask(__name__)
 
@@ -19,7 +19,7 @@ def predict():
         hypertension = float(request.form['hypertension'])
 
         # Create a sample data point
-        user_data = [[age, hypertension, bmi, hba1c, blood_glucose]]
+        # user_data = [[age, hypertension, bmi, hba1c, blood_glucose]]
 
         # Make a prediction
         # prediction = nn_clf.predict(user_data)[0]
