@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from joblib import load
-nn_clf = load('Diabetes_MLP.joblib')
+# nn_clf = load('Diabetes_MLP.joblib')
 app = Flask(__name__)
 
 
@@ -49,4 +49,5 @@ def cite():
     return render_template('cite.html')
 
 if __name__ == '__main__':
+    app.debug = True
     app.run(debug=True)

@@ -15,8 +15,8 @@ I utilize machine learning model to predict diabetes and build a website for fre
 To get started with this project, clone this repository onto your local machine by using the following command:
 
 ```bash
-git clone https://github.com/your-username/diabetes-prediction-web-app.git
-cd diabetes-prediction-web-app
+git clone https://github.com/YiZheHong/Diabetes-Prediction-Web.git
+cd Diabetes-Prediction-Web
 ```
 
 **Step 2: Set up a Python Environment**
